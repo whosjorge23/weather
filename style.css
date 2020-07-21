@@ -42,6 +42,10 @@ button.bg-primary:hover {
   border-color: #27ae60 !important;
 }
 
+.bg-danger {
+  background-color: #e74c3c !important;
+}
+
 .list-group {
   margin-bottom: 10px;
 }
