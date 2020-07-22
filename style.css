@@ -55,8 +55,25 @@ button.bg-primary:hover {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 380px) {
+  .mb-3{
+    margin-left: 7px;
+  }
+
+  .btn-primary {
+    margin-left: 7px;
+  }
+
   .list-group {
-    padding-left: 15px !important;
+    padding-left: 7px;
+  }
+
+  #city-block {
+    width: 336px;
+    margin-bottom: 10px;
+  }
+
+  h3#current-city{
+    font-size: 1.55rem;
   }
 }
