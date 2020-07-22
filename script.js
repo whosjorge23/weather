@@ -9,6 +9,7 @@ var currentTemperature = $("#temperature");
 var currentTemperatureC = $("#temperatureC");
 var currentHumidty = $("#humidity");
 var currentWSpeed = $("#wind-speed");
+var currentWSpeedKM = $("#wind-speed-km");
 var currentUvindex = $("#uv-index");
 var sCity = [];
 // searches the city to see if it exists in the entries from the storage
@@ -66,7 +67,9 @@ function currentWeather(city) {
     //Display Wind speed and convert to MPH
     var ws = response.wind.speed;
     var windsmph = (ws * 2.237).toFixed(1);
-    $(currentWSpeed).html(windsmph + "MPH");
+    var windskph = (windsmph * 1.609).toFixed(1);
+    $(currentWSpeed).html(windsmph + "MPH ");
+    $(currentWSpeedKM).html(windskph + "KPH");
     // Display UVIndex.
     //By Geographic coordinates method and using appid and coordinates as a parameter we are going build our uv query url inside the function below.
     UVIndex(response.coord.lon, response.coord.lat);
