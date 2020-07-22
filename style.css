@@ -36,6 +36,10 @@ button.bg-primary:hover {
   background-color: #27ae60 !important;
 }
 
+button.bg-primary:focus, button.bg-primary:hover {
+    background-color: #27ae60 !important;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #27ae60 !important;
