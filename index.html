@@ -38,7 +38,7 @@
       <div class="row">
         <div class="col-sm-4 bg-light">
           <!--Here we create an HTML form for handling the inputs-->
-          <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+          <h4 class="pt-1" id="search"><strong>Search for a City:</strong></h4>
           <!--Here we create the text box for capturing the search city Name-->
           <div class="input-group mb-3">
             <input
@@ -61,7 +61,7 @@
           <ul class="list-group"></ul>
         </div>
         <div class="col-sm-8">
-          <div class="row ml-2 border border-dark rounded">
+          <div class="row ml-2 border border-dark rounded" id="city-block">
             <div class="col-sm-12" id="current-weather">
               <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
               <p>
@@ -84,7 +84,7 @@
           <!--Row for future data to be dumped here-->
           <div class="col-sm-12" id="future-weather">
             <h3>5-Day Forecast:</h3>
-            <div class="row text-light">
+            <div class="row text-light" id="next5days">
               <div
                 class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded"
               >
