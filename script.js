@@ -53,11 +53,10 @@ function currentWeather(city) {
     var date = new Date(response.dt * 1000).toLocaleDateString();
     //parse the response for name of city and concanatig the date and icon.
     $(currentCity).html(
-      response.name + "(" + date + ")" + "<img src=" + iconurl + ">"
+      response.name + " " + response.sys.country + " " + "(" + date + ")" + "<img src=" + iconurl + ">"
     );
     // parse the response to display the current temperature.
     // Convert the temp to fahrenheit
-
     var tempF = (response.main.temp - 273.15) * 1.8 + 32;
     var tempC = response.main.temp - 273.15;
     $(currentTemperature).html(tempF.toFixed(2) + "&#8457" + " ");
